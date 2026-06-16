@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Voici la page contact du site web de La Relève Doloise.">
+    <title>Contact Us | La Relève Doloise</title>
+    <link rel="stylesheet" href="style-contactus.css">
+    <link rel="icon" type="image/png" href="img/La-Relève-Doloise.ico">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-flex">
+            <div class="logo-zone">
+                <a href="accueil.html" class="logo-text">La Relève Doloise</a>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="accueil.html">Accueil</a>
+                <a href="engagez-vous.html">Engagez-vous</a>
+                <a href="actualite.html">Actualités</a>
+                <a href="about-us.html">À propos</a>
+            </nav>
+
+            <div class="header-cta">
+                <a href="connecter.html" class="btn-space">👤 Mon espace</a>
+                <a href="contactus.html" class="btn-primary active-contact">Contactez-nous !</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contactez-<span>nous</span></h1>
+                <p class="lead">Une question, un projet de partenariat ou besoin d'aide ? Écrivez-nous.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <form action="" method="post" class="contact-form">
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="contact-name">Nom <span class="required">*</span></label>
+                                <input id="contact-name" type="text" name="name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-phone">Numéro de téléphone</label>
+                                <input id="contact-phone" type="tel" name="phone" placeholder="+33 6 00 00 00 00">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">E-mail <span class="required">*</span></label>
+                                <input id="contact-email" type="email" name="email_from" placeholder="example@mail.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-company">Société</label>
+                                <input id="contact-company" type="text" name="company" placeholder="ACME Corp">
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="contact-subject">Sujet <span class="required">*</span></label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="" disabled selected hidden>Sélectionnez l'objet de votre message</option>
+                                <option value="devenir_membre">Devenir membre de l'association</option>
+                                <option value="devenir_partenaire">Devenir partenaire de l'association</option>
+                                <option value="jeune_besoin">Je suis un jeune dans le besoin</option>
+                                <option value="faire_don">Je veux faire un don (vêtements, meubles, nourriture)</option>
+                                <option value="autres">Autres</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="contact-message">Message <span class="required">*</span></label>
+                            <textarea id="contact-message" name="description" placeholder="Écrivez votre message ici..." rows="6" required></textarea>
+                            <p class="form-help">Nous répondons généralement sous 1 à 2 jours ouvrables.</p>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit">Envoyer le message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer class="footer-section">
+        <div class="footer-wave-container">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="wave-green-sapin"></path>
+            </svg>
+        </div>
+
+        <div class="footer-wrapper">
+            <nav class="footer-links">
+                <a href="accueil.html">Accueil</a>
+                <a href="about-us.html">À propos de nous</a>
+                <a href="status.html">Statuts d'association</a>
+                <a href="Cgu.html">CGU</a>
+            </nav>
+            
+            <div class="footer-social-media">
+                <a href="https://www.facebook.com/larelevedoloise" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/larelevedoloise" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+
+        <div class="footer-copyright-text">
+            2026 © La Relève Doloise
+        </div>
+    </footer>
+</body>
+</html>

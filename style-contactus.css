@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+:root {
+    --accent-salmon: #F4A29A;   
+    --accent-orange: #E2725B;   
+    --orange-button: #FF7A00;   
+    --text-dark: #FF7A00 ;       
+    --white: #FFFFFF;
+    --gray-text: #7A869A;       
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA; 
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease-in-out;
+}
+header nav, 
+.header-flex, 
+.header-capsule {
+    width: 95% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    background-color: #FF7A00 !important; 
+    padding: 12px 35px !important;
+    border-radius: 50px !important;       
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    box-shadow: 0 8px 24px rgba(255, 122, 0, 0.2) !important;
+}
+
+
+
+.main-header {
+    background-color: var(--white);
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+.header-flex {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logo-zone .logo-text {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #FFFFFF; 
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px; 
+}
+
+.nav-menu a {
+    font-weight: 600;
+    color: #FFFFFF; 
+    font-size: 0.95rem;
+    padding-bottom: 6px;
+    border-bottom: 3px solid transparent; 
+}
+
+.nav-menu a:hover {
+    color: #FFFFFF; 
+    border-bottom: 3px solid #FFFFFF; 
+}
+
+.header-cta {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-space {
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: #1A3D2F;
+    color: var(--white);
+    padding: 12px 22px;
+    border-radius: 100px;
+    font-weight: 700;
+    box-shadow: 0 6px 15px rgba(255,127, 88, 0.25);
+    transition: 0.3s;;
+    
+}
+.btn-primary:hover {
+    background-color: #ff6d3a;
+    transform: translateY(-2px);
+}
+
+.active-contact {
+    background-color: #13291F;
+}
+
+
+.contact-hero {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FCECE9 100%);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.contact-hero h1 span {
+    background-color: var(--white);
+    padding: 2px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.contact-hero .lead {
+    font-size: 1.1rem;
+    color: #4A5568;
+}
+
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    background-color: var(--white);
+    padding: 45px;
+    border-radius: 24px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.required {
+    color: var(--accent-orange);
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #E2E8F0;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    background-color: #FAFAFA;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #245A41;
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(36, 90, 65, 0.05);
+}
+
+.form-help {
+    font-size: 0.8rem;
+    color: var(--gray-text);
+    margin-top: 4px;
+}
+
+
+.form-actions {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-submit {
+    display: inline-block;
+    background-color: var(--orange-button);
+    color: var(--white);
+    border: none;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 122, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #D46600;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 122, 0, 0.3);
+}
+
+
+.footer-section {
+    position: relative;
+    background-color: #1A3D2F;
+    padding: 0 0 40px 0;
+    color: #E2ECE7;
+    margin-top: 120px;
+
+}
+
+
+.footer-wave-container {
+    position: absolute;
+    top: -118px; 
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.footer-wave-container svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+
+.footer-wave-container .wave-green-sapin {
+    fill: #1A3D2F !important; 
+}
+
+
+.footer-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    font-weight: 600;
+    color: #C3D3CB;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-social-media a {
+    font-weight: 600;
+    color: #C3D3CB;
+}
+
+.footer-social-media a:hover {
+    color: #FF7A00; 
+}
+
+
+.footer-copyright-text {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
+    font-size: 0.8rem;
+    color: #98AF9E;
+}
+
+
+@media (max-width: 768px) {
+    .header-flex, .footer-wrapped {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .form-grid {
+        grid-template-columns: 1fr; 
+    }
+    .form-wrapper {
+        padding: 25px 20px;
+    }
+    .contact-hero h1 {
+        font-size: 2.2rem;
+    }
+    .btn-submit {
+        width: 100%; 
+    }
+}

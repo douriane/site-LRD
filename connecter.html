@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion | La Relève Doloise</title>
+    <link rel="stylesheet" href="style-connecter.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-flex">
+            <div class="logo-zone">
+                <a href="accueil.html" class="logo-text">La Relève Doloise</a>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="accueil.html">Accueil</a>
+                <a href="engagez-vous.html">Engagez-vous</a>
+                <a href="actualite.html">Actualités</a>
+                <a href="about-us.html">À propos</a>
+            </nav>
+
+            <div class="header-cta">
+                <a href="connecter.html" class="btn-space active-space">👤 Mon espace</a>
+                <a href="contactus.html" class="btn-primary">Contactez-nous !</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <div class="hero-overlay-gradient"></div>
+        
+        <section class="login-card">
+            <h1>Se connecter</h1>
+            
+            <form action="/web/login" method="POST" class="login-form">
+                <input type="hidden" name="csrf_token" value="b2ef6bf1977bdfbf4773783dd176917f24559301o1810970942">
+
+                <div class="form-group">
+                    <label for="login">Adresse e-mail</label>
+                    <input type="email" id="login" name="login" placeholder="Saisir votre adresse e-mail" required autocomplete="username">
+                </div>
+
+                <div class="form-group">
+                    <div class="label-wrapper">
+                        <label for="password">Mot de passe</label>
+                        <a href="/web/reset_password" class="form-link-sm">Mot de passe oublié ?</a>
+                    </div>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="password" name="password" placeholder="Saisir votre mot de passe" required autocomplete="current-password">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Se connecter</button>
+            </form>
+
+            <div class="login-footer">
+                <a href="/web/signup" class="form-link">Vous n'avez pas de compte ? Créez-en un</a>
+                <span class="divider">ou</span>
+                <a href="#" class="btn-passkey">🔑 Utiliser une clé d'accès (Passkey)</a>
+            </div>
+        </section>
+    </main>
+        
+    <footer class="footer-section">
+        <div class="footer-wave-container">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="wave-green-sapin"></path>
+            </svg>
+        </div>
+
+        <div class="footer-wrapper">
+            <nav class="footer-links">
+                <a href="accueil.html">Accueil</a>
+                <a href="about-us.html">À propos de nous</a>
+                <a href="status.html">Statuts d'association</a>
+                <a href="Cgu.html">CGU</a>
+            </nav>
+            
+            <div class="footer-social-media">
+                <a href="https://www.facebook.com/larelevedoloise" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/larelevedoloise" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+
+        <div class="footer-copyright-text">
+            2026 © La Relève Doloise
+        </div>
+    </footer>
+
+</body>
+</html>
